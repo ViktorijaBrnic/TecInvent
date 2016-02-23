@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOMs</title>
+</head>
+<body>
+
+<div id="mainmenu">
+    <span class="menu_item"><a href="index.html">Home</a></span>
+    <span class="menu_item"><a href="index.html">Components</a></span>
+    <span class="menu_item"><a href="symbols.html">Schematic symbols</a></span>
+    <span class="menu_item"><a href="footprints.html">Footprints</a></span>
+    <span class="menu_item"><a href="suppliers.html">Suppliers</a></span>
+    <span class="menu_item"><a href="boms.html">BOMs</a></span>
+    <span class="menu_item"><a href="about.html">About</a></span>
+    <span class="menu_item"><a href="contact.html">Contact</a></span>
+    <span class="menu_item"><a href="login.html">Login</a></span>
+</div>
+
+<div class="container">
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <p>
+            Choose your BOM's file(*.csv, *.xls):<br>
+            <input name="Datei" type="file" size="50" accept="text/*">
+        </p>
+        <button type="button">upload</button>
+    </form>
+
+
+    <div class="todo-form">
+        <label for="boms"><h2 class="lead">BOM's</h2></label>
+        <form id="boms">
+            <div class="form-group">
+
+                <div class="ui-widget">
+                    <select id="assembled_id">
+                    </select>
+                </div>
+                <div class="ui-widget">
+                    <select id="components_id">
+                    </select>
+                </div>
+                <div class="ui-widget">
+                    <select id="designator">
+                    </select>
+                </div>
+                <div class="ui-widget">
+                    <select id="created">
+                    </select>
+                </div>
+                <div class="ui-widget">
+                    <select id="last_modifued">
+                    </select>
+                </div>
+                <div class="ui-widget">
+                    <select id="position">
+                    </select>
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="createTodo()">Add component</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
